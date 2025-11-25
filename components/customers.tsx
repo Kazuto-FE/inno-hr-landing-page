@@ -32,7 +32,7 @@ export function Customers() {
             {duplicatedLogos.map((partner, index) => (
               <div
                 key={`${partner.alt}-${index}`}
-                className="mx-10 sm:mx-16 flex-shrink-0 flex items-center justify-center"
+                className="mx-10 sm:mx-16 shrink-0 flex items-center justify-center"
               >
                 {/* Giữ nguyên kích thước + tỷ lệ gốc */}
                 <Image

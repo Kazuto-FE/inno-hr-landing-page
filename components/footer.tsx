@@ -2,7 +2,7 @@ import { Facebook, Linkedin, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-slate-950 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+    <footer id="footer" className="bg-slate-950 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 pb-12 border-b border-slate-800">

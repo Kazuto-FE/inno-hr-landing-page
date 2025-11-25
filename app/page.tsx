@@ -10,6 +10,7 @@ import { AIIntelligence } from "@/components/ai-intelligence"
 import { EnterpriseSolutions } from "@/components/enterprise-solutions"
 import { Customers } from "@/components/customers"
 import { CTASection } from "@/components/cta-section"
+import FAQ from "@/components/faq"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -18,12 +19,13 @@ export default function Home() {
       <Header />
       <HeroSection />
       <EnterpriseSolutions />
+      <KeyFeatures />
       <ProductFeatures />
       <DataSecurity />
       <AIIntelligence />
-      <KeyFeatures />
       <UniqueFeatures />
       <Customers />
+      <FAQ />
       <CTASection />
       <Footer />
     </main>
