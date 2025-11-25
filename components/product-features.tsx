@@ -7,8 +7,8 @@ export function ProductFeatures() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-white border border-border rounded-2xl shadow-lg overflow-hidden">
-            <img src="/images/image.png" alt="Dashboard Features" className="w-full h-auto" />
+          <div className="">
+            <img src="/images/product1.jpg" alt="Dashboard Features" className="w-full h-auto" />
           </div>
 
           <div>

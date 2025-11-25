@@ -7,7 +7,7 @@ export function Customers() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-12">
-          <img src="/images/image.png" alt="Customers" className="max-w-full h-auto" />
+          {/* <img src="/images/image.png" alt="Customers" className="max-w-full h-auto" /> */}
         </div>
       </div>
     </section>

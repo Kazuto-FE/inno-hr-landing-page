@@ -21,8 +21,8 @@ export function DataSecurity() {
             </div>
           </div>
 
-          <div className="bg-white border border-border rounded-2xl shadow-lg overflow-hidden">
-            <img src="/images/image.png" alt="Data Security" className="w-full h-auto" />
+          <div className="">
+            <img src="/images/product2.jpg" alt="Data Security" className="w-full h-auto" />
           </div>
         </div>
       </div>

@@ -7,8 +7,8 @@ export function AIIntelligence() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-white border border-border rounded-2xl shadow-lg overflow-hidden">
-            <img src="/images/image.png" alt="AI Features" className="w-full h-auto" />
+          <div className="">
+            <img src="/images/product3.jpg" alt="AI Features" className="" />
           </div>
 
           <div className="space-y-6">
