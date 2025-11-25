@@ -1,30 +1,34 @@
 import Image from "next/image"
+import Icon1 from "@/public/Icons/settings.png"
+import Icon2 from "@/public/Icons/shield_green.png"
+import Icon3 from "@/public/Icons/brain_purple.png"
+import Icon4 from "@/public/Icons/download.png"
 
 export function KeyFeatures() {
   const features = [
     {
-      icon: "/Icons/settings.png",
+      icon: Icon1,
       title: "Tùy chỉnh 100%",
       description: "Theo quy trình riêng của bạn",
       bg: "bg-blue-100",
       fg: "text-blue-600",
     },
     {
-      icon: "/Icons/shield_green.png",
+      icon: Icon2,
       title: "Database riêng tư",
       description: "Bảo mật cấp độ ngân hàng",
       bg: "bg-green-100",
       fg: "text-green-600",
     },
     {
-      icon: "/Icons/brain_purple.png",
+      icon: Icon3,
       title: "AI thông minh",
       description: "Hỗ trợ văn hành hàng ngày",
       bg: "bg-purple-100",
       fg: "text-purple-600",
     },
     {
-      icon: "/Icons/download.png",
+      icon: Icon4,
       title: "Xuất dữ liệu tự do",
       description: "Không ràng buộc nhà cung cấp",
       bg: "bg-orange-100",

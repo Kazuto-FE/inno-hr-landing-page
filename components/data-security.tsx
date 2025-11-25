@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image"
+import Iconcheck from "@/public/icons/check.png"
+import Product from "@/public/images/product2.png"
 
 export function DataSecurity() {
   return (
@@ -13,7 +15,7 @@ export function DataSecurity() {
             <ul className="space-y-6 mt-2">
               <li className="flex items-start gap-3">
                 <Image
-                  src="/Icons/check.png"
+                  src={Iconcheck}
                   alt="tick"
                   width={20}
                   height={20}
@@ -26,7 +28,7 @@ export function DataSecurity() {
               </li>
               <li className="flex items-start gap-3">
                 <Image
-                  src="/Icons/check.png"
+                  src={Iconcheck}
                   alt="tick"
                   width={20}
                   height={20}
@@ -39,12 +41,18 @@ export function DataSecurity() {
               </li>
             </ul>
           </div>
-
-          <div className="flex justify-center lg:justify-end">
-            <img
+          <div className="flex justify-center lg:justif-center">
+            {/* <img
               src="/images/product2-1.png"
               alt="Data Security"
               className="w-full max-w-[520px] h-auto rounded-[20px]"
+            /> */}
+            <Image
+              src={Product}
+              alt="tick"
+              width={550}
+              height={350}
+              className="rounded-2xl border-4 border-gray-300"
             />
           </div>
         </div>

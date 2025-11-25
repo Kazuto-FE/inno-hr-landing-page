@@ -1,34 +1,40 @@
 import Image from "next/image"
+import Icon1 from "@/public/Icons/lock.png"
+import Icon2 from "@/public/Icons/refesh.png"
+import Icon3 from "@/public/Icons/database.png"
+import Icon4 from "@/public/Icons/shield.png"
+import Icon5 from "@/public/Icons/robot.png"
+import Icon6 from "@/public/Icons/dashboard.png"
 
 export function EnterpriseSolutions() {
   const solutions = [
     {
-      icon: "/Icons/lock.png",
+      icon: Icon1,
       title: "Phần mềm cứng nhắc",
       description: "Không tùy chỉnh được quy trình, buộc phải làm theo template có sẵn",
     },
     {
-      icon: "/Icons/refesh.png",
+      icon: Icon2,
       title: "Thay đổi quy trình",
       description: "Phải điều chỉnh cách làm việc để phù hợp với phần mềm",
     },
     {
-      icon: "/Icons/database.png",
+      icon: Icon3,
       title: "Dữ liệu bị giữ lại",
       description: "Khó xuất dữ liệu, bị ràng buộc với nhà cung cấp, không chuyển đổi",
     },
     {
-      icon: "/Icons/shield.png",
+      icon: Icon4,
       title: "Bảo mật thấp",
       description: "Chia sẻ cơ sở dữ liệu với nhiều công ty khác, rủi ro bảo mật cao",
     },
     {
-      icon: "/Icons/robot.png",
+      icon: Icon5,
       title: "Thiếu AI hỗ trợ",
       description: "Không có AI tự động hóa, HR tốn nhiều thời gian cho các tác vụ lặp lại.",
     },
     {
-      icon: "/Icons/dashboard.png",
+      icon: Icon6,
       title: "Khó mở rộng",
       description: "Khi doanh nghiệp lớn lên, phần mềm, không theo kịp nhu cầu phát triển",
     },

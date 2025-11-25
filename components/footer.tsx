@@ -1,141 +1,166 @@
-import { Facebook, Linkedin, Twitter } from "lucide-react"
+import Mail from "@/public/Icons/mail.png"
+import Phone from "@/public/Icons/phone.png"
+import MapPin from "@/public/Icons/address.png"
+import Linkedin from "@/public/Icons/linkedin.png"
+import Facebook from "@/public/Icons/facebook.png"
+import Youtube from "@/public/Icons/youtube.png"
+import Image from "next/image"
+import LogoInnoverse from "@/public/images/Innoverse.png"
 
 export function Footer() {
   return (
-    <footer id="footer" className="bg-slate-950 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-16 pb-12 border-b border-slate-800">
-          <h3 className="text-4xl font-bold text-white mb-3">InnoHR AI</h3>
-          <p className="text-lg text-gray-400 mb-2">
-            Phần mềm phục vụ bạn – dữ liệu thuộc về bạn – AI hữu ích thực sự.
+    <footer id="about" className="bg-[#0A0E27] text-white py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          {/* Cột 1: Logo + Contact */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <Image
+                src={LogoInnoverse}
+                alt="InnoVerse Logo"
+                width={168}
+                height={48}
+              />
+            </div>
+            <p className="text-white/70 text-sm leading-relaxed">
+              Giải pháp AI Self-Host cho Doanh nghiệp
+            </p>
+
+            <div className="space-y-4 text-sm">
+              <div className="flex items-center gap-3">
+                <Image
+                  src={Mail}
+                  alt="InnoVerse Logo"
+                  width={16}
+                  height={16}
+                />
+                <span>contact@innoverse.vn</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Image
+                  src={Phone}
+                  alt="InnoVerse Logo"
+                  width={16}
+                  height={16}
+                />
+                <span>0383448963</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Image
+                  src={MapPin}
+                  alt="InnoVerse Logo"
+                  width={16}
+                  height={16}
+                />
+                <span>107 đường số 2 Vạn Phúc City Phường Hiệp Bình thành Phố Thủ Đức</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Cột 2: Dịch vụ */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Dịch vụ</h3>
+            <ul className="space-y-4 text-white/70">
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Large Language Models
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Computer Vision
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Self-Host Infrastructure
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                AI Consulting
+              </li>
+            </ul>
+          </div>
+
+          {/* Cột 3: Tài nguyên */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Tài nguyên</h3>
+            <ul className="space-y-4 text-white/70">
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Blog
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Case Studies
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Whitepapers
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                FAQs
+              </li>
+            </ul>
+          </div>
+
+          {/* Cột 4: Công ty */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Công ty</h3>
+            <ul className="space-y-4 text-white/70">
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Về InnoVerse
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Đội ngũ
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Careers
+              </li>
+              <li className="flex items-center gap-3 hover:text-cyan-400 transition-colors cursor-pointer">
+                <span className="text-cyan-400">→</span>
+                Liên hệ
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Dòng dưới cùng */}
+        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+          <p className="text-white/50">
+            © 2025 Innoverse. All rights reserved.
           </p>
-          <p className="text-blue-400 hover:text-blue-300 transition cursor-pointer">Hệ Thống HR Phát Triển Cùng Bạn</p>
-        </div>
-
-        {/* Links Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12">
-          {/* Sản phẩm */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Sản phẩm</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Chấm công AI
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Tuyển dụng AI
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Quản lý hồ sơ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Tính lương
-                </a>
-              </li>
-            </ul>
+          <div className="flex items-center gap-6 text-white/50">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <span>|</span>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
-
-          {/* Giải pháp */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Giải pháp</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Doanh nghiệp SME
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Startup
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Enterprise
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Migration
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Hỗ trợ */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Hỗ trợ</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Tài liệu
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  API
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Hướng dẫn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Liên hệ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Công ty */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Công ty</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Về chúng tôi
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Tuyển dụng
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Tin tức
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-500">© 2025 InnoHR AI. All rights reserved.</p>
-          <div className="flex gap-4">
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              <Facebook className="w-5 h-5" />
+          <div className="flex items-center gap-5">
+            <a href="#">
+              <Image
+                src={Linkedin}
+                alt="InnoVerse Linkedin"
+                width={40}
+                height={40}
+              />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              <Linkedin className="w-5 h-5" />
+            <a href="https://www.facebook.com/profile.php?id=61576051156995">
+              <Image
+                src={Facebook}
+                alt="InnoVerse Facebook"
+                width={40}
+                height={40}
+              />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              <Twitter className="w-5 h-5" />
+            <a href="#">
+              <Image
+                src={Youtube}
+                alt="InnoVerse Youtube"
+                width={40}
+                height={40}
+              />
             </a>
           </div>
         </div>

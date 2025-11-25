@@ -17,7 +17,7 @@ export const Header = () => {
     { label: "Tính năng", href: "#features" },
     { label: "Case Study", href: "#benefits" },
     { label: "Hỗ Trợ", href: "#support" },
-    { label: "Về chúng tôi", href: "#" },
+    { label: "Về chúng tôi", href: "#about" },
   ]
 
   return (
@@ -61,7 +61,7 @@ export const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
             <Link href="#support">
-              <Button className="bg-[#2C8AEA] text-white text-base rounded-full px-6 py-2 font-semibol min-w-[178px] h-[58]">
+              <Button className="bg-[#2C8AEA] hover:bg-[#1c7ddf] text-white text-base rounded-full px-6 py-2 font-semibol min-w-[178px] h-[58]">
                 Đặt lịch Demo
               </Button>
             </Link>
@@ -88,7 +88,7 @@ export const Header = () => {
             ))}
             <div className="px-4 pt-4">
               <Link href="#support">
-                <Button className="w-full bg-[#2C8AEA] text-white rounded-full py-2 font-semibold">
+                <Button className="w-full bg-[#2C8AEA] hover:bg-[#1c7ddf] text-white rounded-full py-2 font-semibold">
                   Đặt lịch Demo
                 </Button>
               </Link>

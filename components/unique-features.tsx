@@ -1,35 +1,41 @@
 import Image from "next/image"
+import Icon1 from "@/public/Icons/brain.png"
+import Icon2 from "@/public/Icons/add.png"
+import Icon3 from "@/public/Icons/folder.png"
+import Icon4 from "@/public/Icons/caculator.png"
+import Icon5 from "@/public/Icons/trending.png"
+import Icon6 from "@/public/Icons/setting_pink.png"
 
 export function UniqueFeatures() {
   const features = [
     {
-      icon: "/Icons/brain.png",
+      icon: Icon1,
       title: "Chấm Công AI",
       description:
         "Nhân diện khuôn mặt thông minh, phát hiện gian lận và tự động tính toán thời gian làm việc chính xác",
     },
     {
-      icon: "/Icons/add.png",
+      icon: Icon2,
       title: "Tuyển Dụng & Trích Xuất CV",
       description: "AI phân tích CV tự động, đánh giá ứng viên, gợi ý phù hợp với vị trí tuyển dụng",
     },
     {
-      icon: "/Icons/folder.png",
+      icon: Icon3,
       title: "Quản Lý Hồ Sơ",
       description: "Lưu trữ và quản lý thông tin nhân viên một cách an toàn, để dàng truy xuất và cập nhật",
     },
     {
-      icon: "/Icons/caculator.png",
+      icon: Icon4,
       title: "Chấm Công - Tính Lương Linh Hoạt",
       description: "Tự động tính lương theo nhiều công thức phức tạp, hỗ trợ đa dạng chế độ làm việc",
     },
     {
-      icon: "/Icons/trending.png",
+      icon: Icon5,
       title: "Báo Cáo & Dự Báo AI",
       description: "Phân tích dữ liệu thông minh, dự báo xu hướng nhân sự",
     },
     {
-      icon: "/Icons/setting_pink.png",
+      icon: Icon6,
       title: "Workflow Tùy Chỉnh",
       description: "Thiết kế quy trình làm việc theo nhu cầu riêng, tự động hóa các tác vụ phức tạp",
     },

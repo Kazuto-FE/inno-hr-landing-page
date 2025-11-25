@@ -4,6 +4,8 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Loader2 } from "lucide-react"
+import Camera from "@/public/Icons/camera.png"
+import Chat from "@/public/Icons/chat.png"
 import Image from "next/image"
 
 export function CTASection() {
@@ -78,14 +80,13 @@ export function CTASection() {
       })
 
       setSuccess(true)
-      alert("Đã gửi thành công! Chúng tôi sẽ liên hệ bạn trong vòng 24h tới.")
 
       // Reset form
       setFormData({ company: "", email: "", phone: "", industry: "" })
       setSelectedOption("demo")
 
     } catch (err) {
-      alert("Có lỗi mạng, bạn vui lòng thử lại hoặc nhắn trực tiếp Zalo/Fanpage nhé!")
+      alert("Có lỗi mạng, bạn vui lòng thử lại hoặc liên hệ qua Fanpage nhé!")
       console.error(err)
     } finally {
       setIsLoading(false)
@@ -121,14 +122,14 @@ export function CTASection() {
                   <input type="radio" name="option" value="demo" checked={selectedOption === "demo"}
                     onChange={(e) => setSelectedOption(e.target.value)} className="w-4 h-4"
                   />
-                  <Image src="/icons/camera.png" alt="book-demo" width={25} height={25} unoptimized />
+                  <Image src={Camera} alt="book-demo" width={25} height={25} unoptimized />
                   <span className="text-gray-200">Đặt lịch Demo (30 phút)</span>
                 </label>
                 <label className="flex items-center gap-3 p-3 border border-slate-600 rounded-lg cursor-pointer hover:bg-slate-700/50 transition">
                   <input type="radio" name="option" value="selfhost" checked={selectedOption === "selfhost"}
                     onChange={(e) => setSelectedOption(e.target.value)} className="w-4 h-4"
                   />
-                  <Image src="/icons/chat.png" alt="demo-Self-Host" width={25} height={25} unoptimized />
+                  <Image src={Chat} alt="demo-Self-Host" width={25} height={25} unoptimized />
                   <span className="text-gray-200">Nhận tư vấn về AI Self-Host</span>
                 </label>
               </div>
