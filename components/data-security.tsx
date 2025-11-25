@@ -1,3 +1,5 @@
+import { Card } from "@/components/ui/card"
+
 export function DataSecurity() {
   return (
     <section id="security" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
@@ -21,9 +23,13 @@ export function DataSecurity() {
             </div>
           </div>
 
-          <div className="">
-            <img src="/images/product2.jpg" alt="Data Security" className="w-full h-auto" />
-          </div>
+          <Card className="border border-gray-300 rounded-[20px]">
+            <img
+              src="/images/product2.jpg"
+              alt="Data Security"
+              className="w-[393px] h-[296px] rounded-[20px] object-cover"
+            />
+          </Card>
         </div>
       </div>
     </section>

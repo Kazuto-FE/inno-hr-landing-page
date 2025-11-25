@@ -1,3 +1,5 @@
+import { Card } from "@/components/ui/card"
+
 export function AIIntelligence() {
   return (
     <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -7,25 +9,29 @@ export function AIIntelligence() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="">
-            <img src="/images/product3.jpg" alt="AI Features" className="" />
-          </div>
+          <Card className="border border-gray-300 rounded-[20px]">
+            <img
+              src="/images/product3.jpg"
+              alt="AI Features"
+              className="w-[393px] h-[296px] rounded-[20px] object-cover"
+            />
+          </Card>
 
           <div className="space-y-6">
             <div className="flex gap-3">
-              <span className="text-green-500 font-bold text-xl">✓</span>
+              <img src="/tick.png" alt="check" className="w-6 h-6 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold">Chấm công thông minh, nhân diện khuôn mặt</h4>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-green-500 font-bold text-xl">✓</span>
+              <img src="/tick.png" alt="check" className="w-6 h-6 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold">Độc lập phân tích CV tự động</h4>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-green-500 font-bold text-xl">✓</span>
+              <img src="/tick.png" alt="check" className="w-6 h-6 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold">Dự báo nhân sự và phân tích xu hướng</h4>
               </div>
